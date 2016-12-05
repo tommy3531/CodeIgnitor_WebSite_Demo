@@ -1,0 +1,34 @@
+#<IfModule mod_rewrite.c>
+#  Options -Indexes
+#
+#  RewriteEngine On
+#  RewriteCond $1 !^(index\\.php|resources|robots\\.txt)
+#  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteRule ^(.+)$ index.php?/$1 [L,QSA]
+#
+#
+#  # Remove '#' in the next line if you want to implement HTTPS for better security website.
+#  # RewriteCond %{HTTPS} off
+#  # RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#  # RewriteCond %{HTTP_HOST} !^www\.
+#  # RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#</IfModule>
+# Rename this file to .htaccess
+# It will be invisible on Mac/Linux
+
+# To rename in windows, you may have to open a text editor
+# then Save File As ".htaccess"
+
+RewriteEngine On
+RewriteBase /hackweekcs4830
+
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^application.*
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
