@@ -21,7 +21,7 @@ API Base:          http://45.79.221.177/hackweekcs4830/index.php/api/PoliticalAp
 
 API Methods: /legislator_last_name/last/{Legislator Last Name}{Ex. Webber} 
 
-             /legislators < br />
+             /legislators - Gets all the legislators
 
 *******************
 Register
