@@ -15,10 +15,10 @@ I decided to write my 3-tier web application in php using a php framework called
 Site Information
 ###################
 
-WebSite Home Page: http://45.79.221.177/hackweekcs4830/
-API Base:          http://45.79.221.177/hackweekcs4830/index.php/api/PoliticalApi/
-API Methods: /legislator_last_name/last/{Legislator Last Name}{Ex. Webber}
-             /legislators
+WebSite Home Page: http://45.79.221.177/hackweekcs4830/ <br />
+API Base:          http://45.79.221.177/hackweekcs4830/index.php/api/PoliticalApi/ <br />
+API Methods: /legislator_last_name/last/{Legislator Last Name}{Ex. Webber} <br />
+             /legislators < br />
 
 *******************
 Register
